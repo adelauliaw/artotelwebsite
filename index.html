@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A seamless blend of cultural diversity and vibrant lifestyle, reflecting the colorful tapestry of Jakarta's dynamic atmosphere. From its architecture to its artistic interior design, the hotel celebrates the rich heritage and contemporary flair of Jakarta's cosmopolitan essence">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="swiper.css" />
+
+    <title>The Triumphant Story of Indonesia’s New Cultural Oasis, Uniting The Best of Sport, Art, and Entertainment</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="logo">
+          <a href="#"><img src="assets/logoHotel.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="https://artotelgelorasenayan.com/rooms">Rooms</a></li>
+        <li><a href="https://artotelgelorasenayan.com/dine">Dine</a></li>
+        <li><a href="https://artotelgelorasenayan.com/artspace">Art</a></li>
+        <li><a href="#explore">Facilities</a></li>
+        <li><a href="https://artotelgelorasenayan.com/whats-on">What's On</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#" class="language-icon">
+          <i class="ri-global-line"></i>
+        </a>
+        <a href="https://www.artotelwanderlust.com/auth/signin-page?joinnow=y" class="nav__btn btn">Sign Up</a>
+      
+      </div>
+    </nav>
+<header class="header">
+  <div class="section__container header__container">
+    <section class="booking__container">
+      <div class="input__group stay-dates">
+        <i class="ri-calendar-2-fill"></i>
+        <div>
+          <span class="input__label">Stay Dates</span>
+          <br/>
+          <span class="input__value">Select Dates</span>
+        </div>
+      </div>
+      
+      <div class="input__group rooms-guests">
+        <i class="ri-user-3-line"></i>
+        <div>
+          <span class="input__label">Rooms & Guests</span>
+          <br />
+          <span class="input__value">1 Room, 2 Adults, 0 Child</span>
+        </div>
+      </div>
+
+      <button class="btn search-btn">
+        <i class="ri-search-line"></i> Search
+      </button>
+    </section>
+  </div>
+</header>
+
+  
+  
+  <!-- Modal Structures (Hidden by Default) -->
+  <div id="guest-modal" class="modal">
+      <div class="modal-content">
+          <label>Room
+              <button onclick="updateGuestCount('rooms', -1)">-</button>
+              <span id="room-count">1</span>
+              <button onclick="updateGuestCount('rooms', 1)">+</button>
+          </label>
+          <label>Adults
+              <button onclick="updateGuestCount('adults', -1)">-</button>
+              <span id="adult-count">2</span>
+              <button onclick="updateGuestCount('adults', 1)">+</button>
+          </label>
+          <label>Children
+              <button onclick="updateGuestCount('children', -1)">-</button>
+              <span id="child-count">0</span>
+              <button onclick="updateGuestCount('children', 1)">+</button>
+          </label>
+          <button onclick="closeModal('guest-modal')">Done</button>
+      </div>
+  </div>
+
+  <section class="explore" id="explore">
+    <h2 class="section__header">The Triumphant Story of Indonesia’s New Cultural Oasis, Uniting The Best of
+      Sport, Art, and Entertainment
+    </h2>
+
+    <h6 class="section__subheader">A seamless blend of cultural diversity and vibrant lifestyle, reflecting the colorful tapestry of 
+      Jakarta's dynamic atmosphere. From its architecture to its artistic interior design, the hotel celebrates the rich heritage and contemporary flair of Jakarta's cosmopolitan essence</h6>
+    
+  </section>
+
+  <section class="hotel-services">
+    <h3 class="hotel-services__title">Hotel Services</h3>
+    <div class="hotel-services__content">
+      <ul class="service-list">
+        <li>✓ 24 hours Room Service</li>
+        <li>✓ Restaurant</li>
+        <li>✓ Artspace</li>
+        <li><a href="#" class="see-more">See More</a></li>
+      </ul>
+      <ul class="service-list">
+        <li>✓ Free Wi-Fi Access</li>
+        <li>✓ Coffee Shop</li>
+        <li>✓ Wellness</li>
+      </ul>
+      <ul class="service-list">
+        <li>✓ Swimming Pool</li>
+        <li>✓ Meeting & Event Space</li>
+        <li>✓ Executive Lounge</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-header">
+    <h2 class="section-header__title">Rooms</h2>
+    <a href="#" class="section-header__link">View All →</a>
+  </section>
+  
+
+
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-item swiper-slide" >
+          
+          <img src="images/img-8.jpg" alt="User Image" >
+          <div class="card-caption">
+            <h3 class="room-title">JUNIOR SUITE</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        
+
+        <div class="card-item swiper-slide">
+          <img src="images/img-7.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">PRESIDENTIAL SUITE</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="images/img-9.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">DELUXE ROOM</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="images/img-10.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">ARTSY SUITE</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide">
+          <img src="images/img-11.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">EXECUTIVE CLUB ROOM</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="card-item swiper-slide">
+          
+          <img src="images/img-12.jpg" alt="User Image" class="user-image" 
+       
+          >
+          <div class="card-caption">
+            <h3 class="room-title">PREMIUM ROOM</h3>
+            <button class="view-button">View</button>
+          </div>
+         
+        </div>
+      </div>
+    
+
+        <div class="swiper-pagination">ttttt</div>
+     
+    </div>
+
+  </div>
+
+  <section class="section-header">
+    <h2 class="section-header__title">What's On</h2>
+    <a href="#" class="section-header__link">View All →</a>
+  </section>
+
+  
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-items swiper-slide" >
+          
+          <img src="images/img-13.jpg" alt="User Image" class="user-image" >
+          <a class="user-name"> SUN SALUTATION YOGA </a>
+          <p class="user-profession"> 
+            Join us for a SUN SALUTATION session led by Master ASHISH in collaboration with Yoga Fit Indonesia.
+             
+             IDR 200.000 (Include buffet breakfast) 
+            Saturday, 26 October 2024 
+            07.30 AM - Onwards 
+            At Poolsi... </p>
+        </div>
+
+        
+
+        <div class="card-items swiper-slide">
+          <img src="images/img-14.jpg" alt="User Image" class="user-image">
+            <a class="user-name"> SUN SALUTATION YOGA </a>
+            <p class="user-profession"> 
+              Join us for a SUN SALUTATION session led by Master ASHISH in collaboration with Yoga Fit Indonesia.
+               
+               IDR 200.000 (Include buffet breakfast) 
+              Saturday, 26 October 2024 
+              07.30 AM - Onwards 
+              At Poolsi... </p>
+        </div>
+
+        <div class="card-items swiper-slide">
+          <img src="images/img-15.jpg" alt="User Image" class="user-image">
+            <a class="user-name"> SUN SALUTATION YOGA </a>
+            <p class="user-profession"> 
+              Join us for a SUN SALUTATION session led by Master ASHISH in collaboration with Yoga Fit Indonesia.
+               
+               IDR 200.000 (Include buffet breakfast) 
+              Saturday, 26 October 2024 
+              07.30 AM - Onwards 
+              At Poolsi... </p>
+        </div>
+
+        <div class="card-items swiper-slide">
+          <img src="images/img-16.jpg" alt="User Image" class="user-image">
+            <a class="user-name"> SUN SALUTATION YOGA </a>
+            <p class="user-profession"> 
+              Join us for a SUN SALUTATION session led by Master ASHISH in collaboration with Yoga Fit Indonesia.
+               
+               IDR 200.000 (Include buffet breakfast) 
+              Saturday, 26 October 2024 
+              07.30 AM - Onwards 
+              At Poolsi... </p>
+        </div>
+
+        
+
+     
+      </div>
+    
+
+        <div class="swiper-pagination">ttttt</div>
+     
+    </div>
+
+  </div>
+
+
+
+
+
+  <section class="section-header">
+    <h2 class="section-header__title">Dine</h2>
+    <a href="#" class="section-header__link">View All →</a>
+  </section>
+  
+  <div class="container swiper">
+  <div class="gallery-swiper">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide gallery-item">
+          <a href="link-coffee-shop.html" class="gallery-image-link">
+            <div class="gallery-image-overlay">
+              <img src="images/img-17.jpg" alt="Buka Mata Coffee Shop">
+            </div>
+          </a>
+          <a href="link-coffee-shop.html" class="gallery-title-link">
+            <h3 class="gallery-item-title">Buka Mata Coffee Shop</h3>
+          </a>
+          <p class="gallery-item-description">
+            A haven for those seeking a delightful escape, offering a perfect blend of excellent coffee, delectable pastries, cakes, and sandwiches...
+          </p>
+        </div>
+  
+        <div class="swiper-slide gallery-item">
+          <a href="link-all-day-dining.html" class="gallery-image-link">
+            <div class="gallery-image-overlay">
+              <img src="images/img-18.jpg" alt="Lidah Lokal All Day Dining">
+            </div>
+          </a>
+          <a href="link-all-day-dining.html" class="gallery-title-link">
+            <h3 class="gallery-item-title">Lidah Lokal All Day Dining</h3>
+          </a>
+          <p class="gallery-item-description">
+            Offers a gastronomic journey that tantalizes the senses. From innovative fusion cuisine to traditional Indonesian delicacies...
+          </p>
+        </div>
+      </div>
+  
+      <!-- Pagination dari Swiper -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
+
+  <section class="section-header">
+    <h2 class="section-header__title">Meetspace</h2>
+    <a href="#" class="section-header__link">View All →</a>
+  </section>
+
+
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+    
+        <div class="meetspace-card swiper-slide">
+          <a href="link-all-day-dining.html" class="gallery-image-link">
+            <div class="gallery-images-overlay">
+              <img src="images/img-20.jpg" alt="Lidah Lokal All Day Dining">
+            </div>
+          </a>
+          <a href="link-all-day-dining.html" class="gallery-title-link">
+            <h3 class="gallery-item-title">Lidah Lokal All Day Dining</h3>
+          </a>
+          <p class="gallery-item-description">
+            Offers a gastronomic journey that tantalizes the senses. From innovative fusion cuisine to traditional Indonesian delicacies...
+          </p>
+        </div>
+    
+        <div class="meetspace-card swiper-slide">
+          <a href="link-coffee-shop.html" class="gallery-image-link">
+            <div class="gallery-images-overlay">
+              <img src="images/img-20.jpg" alt="Buka Mata Coffee Shop">
+            </div>
+          </a>
+          <a href="link-coffee-shop.html" class="gallery-title-link">
+            <h3 class="gallery-item-title">Buka Mata Coffee Shop</h3>
+          </a>
+          <p class="gallery-item-description">
+            A haven for those seeking a delightful escape, offering a perfect blend of excellent coffee, delectable pastries, cakes, and sandwiches...
+          </p>
+        </div>
+        <div class="meetspace-card swiper-slide">
+          <a href="link-coffee-shop.html" class="gallery-image-link">
+            <div class="gallery-images-overlay">
+              <img src="images/img-21.jpg" alt="Buka Mata Coffee Shop">
+            </div>
+          </a>
+          <a href="link-coffee-shop.html" class="gallery-title-link">
+            <h3 class="gallery-item-title">Buka Mata Coffee Shop</h3>
+          </a>
+          <p class="gallery-item-description">
+            A haven for those seeking a delightful escape, offering a perfect blend of excellent coffee, delectable pastries, cakes, and sandwiches...
+          </p>
+        </div>
+        <div class="meetspace-card swiper-slide">
+          <a href="link-coffee-shop.html" class="gallery-image-link">
+            <div class="gallery-images-overlay">
+              <img src="images/img-21.jpg" alt="Buka Mata Coffee Shop">
+            </div>
+          </a>
+          <a href="link-coffee-shop.html" class="gallery-title-link">
+            <h3 class="gallery-item-title">Buka Mata Coffee Shop</h3>
+          </a>
+          <p class="gallery-item-description">
+            A haven for those seeking a delightful escape, offering a perfect blend of excellent coffee, delectable pastries, cakes, and sandwiches...
+          </p>
+        </div>
+    
+        
+
+     
+      </div>
+    
+
+        <div class="swiper-pagination">ttttt</div>
+     
+    </div>
+
+  </div>
+
+  <section class="section-header">
+    <h2 class="section-header__title">ArtSpace</h2>
+    <a href="#" class="section-header__link">View All →</a>
+  </section>
+
+  
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="card-items swiper-slide" >
+          
+          <img src="images/img-13.jpg" alt="User Image" class="user-image" >
+          <a class="user-name"> SUN SALUTATION YOGA </a>
+          <p class="user-profession"> 
+            Join us for a SUN SALUTATION session led by Master ASHISH in collaboration with Yoga Fit Indonesia.
+             
+             IDR 200.000 (Include buffet breakfast) 
+            Saturday, 26 October 2024 
+            07.30 AM - Onwards 
+            At Poolsi... </p>
+        </div
+
+        
+
+     
+      </div>
+    
+
+        <div class="swiper-pagination">ttttt</div>
+     
+    </div>
+
+  </div>
+
+
+  <section class="section-header">
+    <h2 class="section-header__title">Gallery</h2>
+    <a href="#" class="section-header__link">View All →</a>
+  </section>
+  
+
+
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <div class="card-list swiper-wrapper">
+        <div class="cards-item swiper-slide" >
+          
+          <img src="images/img-8.jpg" alt="User Image" >
+          <div class="card-caption">
+            <h3 class="room-title">JUNIOR SUITE</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        
+
+        <div class="cards-item swiper-slide">
+          <img src="images/img-7.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">PRESIDENTIAL SUITE</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="cards-item swiper-slide">
+          <img src="images/img-9.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">DELUXE ROOM</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="cards-item swiper-slide">
+          <img src="images/img-10.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">ARTSY SUITE</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="cards-item swiper-slide">
+          <img src="images/img-11.jpg" alt="User Image" class="user-image">
+          <div class="card-caption">
+            <h3 class="room-title">EXECUTIVE CLUB ROOM</h3>
+            <button class="view-button">View</button>
+          </div>
+        </div>
+
+        <div class="cards-item swiper-slide">
+          
+          <img src="images/img-12.jpg" alt="User Image" class="user-image" 
+       
+          >
+          <div class="card-caption">
+            <h3 class="room-title">PREMIUM ROOM</h3>
+            <button class="view-button">View</button>
+          </div>
+         
+        </div>
+      </div>
+    
+
+        <div class="swiper-pagination">ttttt</div>
+     
+    </div>
+
+  </div>
+
+
+  
+
+
+
+  
+  
+  
+
+
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+ 
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-logo-container">
+        <img src="path/to/artotel-logo.png" alt="Artotel Gelora Senayan" class="footer-logo">
+    </div>
+    <div class="footer-content">
+        <div class="footer-section footer-contact">
+            <h4>Our Location</h4>
+            <p>Jl. Pintu Satu Senayan Jakarta Indonesia 10270</p>
+            <div class="footer-contact-info">
+                <div class="contact-item">
+                    <img src="path/to/phone-icon.png" alt="Phone Icon">
+                    <span>622150959000</span>
+                </div>
+                <div class="contact-item">
+                    <img src="path/to/whatsapp-icon.png" alt="WhatsApp Icon">
+                    <span>6281280199000</span>
+                </div>
+                <div class="contact-item">
+                    <img src="path/to/email-icon.png" alt="Email Icon">
+                    <span>happening@artotelgelorasenayan.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="path/to/location-icon.png" alt="Location Icon">
+                    <span>Nearby Attractions</span>
+                </div>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.10834812375!2d107.6098555!3d-6.9181416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e637bbf9471f%3A0xe4a7f9b51b4c6c0e!2sCentral%20Jakarta!5e0!3m2!1sen!2sid!4v1639380293740!5m2!1sen!2sid"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 - ARTOTEL GELORA SENAYAN. All rights reserved. Artotel Group Proprietary Information.</p>
+    </div>
+</footer>
+
+  
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+  <!-- Linking SwiperJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Linking custom script -->
+  <script src="swiper.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  </body>
+</html>
