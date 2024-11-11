@@ -867,6 +867,9 @@ nav {
 .footer-logo {
   width: 150px;
   height: auto;
+  text-align: center;
+  position: inherit;
+  
 }
 
 /* Footer content styling */
